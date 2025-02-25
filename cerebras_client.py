@@ -4,7 +4,7 @@ from cerebras.cloud.sdk import Cerebras
 class CerebrasClient:
     def __init__(self):
         """Initialize the Cerebras client with API key"""
-        api_key = os.environ.get("CEREBRAS_API_KEY")
+        api_key = st.secrets["CEREBRAS_API_KEY"]
         if not api_key:
             raise ValueError("CEREBRAS_API_KEY environment variable is not set")
         
