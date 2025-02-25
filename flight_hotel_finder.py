@@ -11,8 +11,8 @@ logger = logging.getLogger(__name__)
 class FlightHotelFinderAgent:
     def __init__(self):
         # Get Amadeus API credentials from environment variables
-        self.amadeus_api_key = os.getenv("AMADEUS_API_KEY")
-        self.amadeus_api_secret = os.getenv("AMADEUS_API_SECRET")
+        self.amadeus_api_key = st.secrets["AMADEUS_API_KEY"]
+        self.amadeus_api_secret = st.secrets["AMADEUS_API_SECRET"]
         self.access_token = None
         self.token_expiry = None
         
