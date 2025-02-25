@@ -4,7 +4,7 @@ from datetime import datetime
 from crewai import Agent, Task
 
 # Use actual OpenWeatherMap API key
-WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
+WEATHER_API_KEY = st.secrets["WEATHER_API_KEY"]
 
 class WeatherAgent:
     def __init__(self):
