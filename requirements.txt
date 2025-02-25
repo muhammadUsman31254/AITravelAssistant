@@ -5,3 +5,4 @@ cerebras_cloud_sdk
 crewai
 crewai-tools
 pydantic
+chromadb
